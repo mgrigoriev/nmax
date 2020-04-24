@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require "nmax"
+require 'nmax'
 
 n = ARGV[0].to_i
 
