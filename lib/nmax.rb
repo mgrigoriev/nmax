@@ -3,10 +3,10 @@
 require 'nmax/version'
 
 module Nmax
-  class NotPositiveArgumentError < StandardError; end
+  class NotPositiveIntegerArgumentError < StandardError; end
 
   def self.find(n)
-    raise NotPositiveArgumentError unless n.positive?
+    raise NotPositiveIntegerArgumentError if !n.is_a?(Integer) || !n.positive?
 
     numbers = []
 
