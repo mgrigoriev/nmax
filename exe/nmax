@@ -2,6 +2,10 @@
 
 require 'nmax'
 
-n = ARGV[0].to_i
+if ARGV.length != 1
+  puts 'nmax: one argument expected (how many biggest positive integers to find)'
+  exit
+end
 
+n = ARGV[0].to_i
 puts Nmax.find(n)
