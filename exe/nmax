@@ -4,5 +4,4 @@ require "nmax"
 
 n = ARGV[0].to_i
 
-numbers = Nmax.find(n)
-puts numbers
+puts Nmax.find(n)
